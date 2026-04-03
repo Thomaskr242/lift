@@ -1,0 +1,162 @@
+/* FIX BODY (IMPORTANT) */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #e8f7ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  width: 350px;
+  overflow: hidden;
+}
+h2 {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+input {
+  width: 100%;
+  max-width: 260px;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  margin: 0 auto 15px;
+  display: block;
+  text-align: center;
+}
+input:focus {
+  border-color: #5de0e6;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(90deg, #5de0e6, #004aad);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.error {
+  margin-top: 15px;
+  color: red;
+  font-size: 14px;
+}
+.symbol {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.content {
+  padding: 28px 28px 28px;
+}
+
+
+/* wrapper so sections stack properly */
+.page-wrapper {
+  padding: 20px;
+}
+
+/* WORKOUT CARD */
+.workout-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* TITLE */
+.workout-container h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* TABLE */
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* HEADERS */
+.workout-table th {
+  background: #f5f7fa;
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* CELLS */
+.workout-table td {
+  padding: 12px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+/* VIDEO BUTTON */
+.video-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* 🔥 MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+  .workout-container {
+    padding: 18px;
+  }
+
+  .workout-table th {
+    display: none; /* hide headers */
+  }
+
+  .workout-table tr {
+    display: block;
+    margin-bottom: 15px;
+    background: #f9fbff;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .workout-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border: none;
+    font-size: 14px;
+  }
+
+  /* Add labels manually */
+  .workout-table td:nth-child(1)::before { content: "Exercise"; }
+  .workout-table td:nth-child(2)::before { content: "Sets"; }
+  .workout-table td:nth-child(3)::before { content: "Reps"; }
+  .workout-table td:nth-child(4)::before { content: "Video"; }
+
+  .workout-table td::before {
+    font-weight: 600;
+    color: #555;
+  }
+}
