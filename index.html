@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LIFT ENTRY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="views/style.css">
+</head>
+<body>
+<div class="container">
+  <img src="views/Thomas.PNG" class="symbol" alt="symbol">
+  <div class="content">
+    <h2>Enter Your Workout Code</h2>
+    <form onsubmit="handleCode(event)">
+      <input type="text" id="code" placeholder="Enter code..." required>
+      <button type="submit">Enter</button>
+    </form>
+    <p id="error" class="error"></p>
+  </div>
+</div>
+<script>
+  function handleCode(event) {
+    event.preventDefault();
+    const code = document.getElementById("code").value.trim();
+    const codes = {
+      "8880": "rafLift.html",
+      "4369": "siennaLift.html",
+      "3698": "niciLift.html",
+      "9540": "kolbeLift.html",
+      "67": "noelleLift.html",
+    };
+    if (codes[code]) {
+      window.location.href = codes[code];
+    } else {
+      document.getElementById("error").innerText = "Wrong Code vro 🙏🥀";
+    }
+  }
+</script>
+</body>
+</html>

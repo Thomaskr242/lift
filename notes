@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>"NAME" LIFT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="views/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <section class="workout-container">
+    <h1>Day 1</h1>
+    <table class="workout-table">
+      <thead>
+      <tr>
+        <th>Exercise</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>Video</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="" target="_blank" class="video-btn">▶</a></td>
+      </tr>
