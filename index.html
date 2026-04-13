@@ -19,14 +19,11 @@
 </div>
 <script>
   function handleCode(event) {
-    event.preventDefault();
     const code = document.getElementById("code").value.trim();
     const codes = {
       "8880": "rafLift.html",
       "4369": "siennaLift.html",
       "3698": "niciLift.html",
-      "9540": "kolbeLift.html",
-      "67": "noelleLift.html",
     };
     if (codes[code]) {
       window.location.href = codes[code];
